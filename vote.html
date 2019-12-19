@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script type="text/javascript">
+
+var narendra_modi = 0;
+var rahul_gandhi = 0;
+function modi()
+{
+narendra_modi= narendra_modi +1;
+document.getElementById('narendra_modi').innerHTML = narendra_modi;
+}
+
+function gandhi()
+{
+rahul_gandhi= rahul_gandhi +1;
+document.getElementById('rahul_gandhi').innerHTML = rahul_gandhi;
+}
+
+
+</script>
+
+<style>
+body {margin:25px;}
+
+.column {
+  float: left;
+  width: 33.33%;
+  padding: 5px;
+  
+}
+
+/* Clearfix (clear floats) */
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+  
+}
+.button {
+  background-color: black;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+</style>
+</head>
+<body>
+
+<center> <h2>VOTING </h2>
+<div class="row">
+  <div class="column">
+    <img src="C:\Users\HP\Desktop\narendra modi.jpg" alt="narendra modi" >
+</div>
+  <div class="column">
+    <img src="C:\Users\HP\Desktop\rahul gandhi.jpg" alt="rahul gandhi" >
+  </div>
+</div>
+
+<div class="row">
+  <div class="column">
+   <div id="narendra_modi">  <p>    0  </p></div>
+    <input type="button" onclick="modi();"  class="button" value="VOTE Narendra Modi">
+  </div>
+  <div class="column">
+  <div id="rahul_gandhi">  <p>    0  </p></div>
+    <input type="button" onclick="gandhi();"  class="button" value="VOTE Rahul Gandhi">
+  </div>
+</div>
+
+
+</center>
+</body>
+</html>
