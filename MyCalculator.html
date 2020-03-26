@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<title>Interese Calculator</title>
+	<style>
+		.button
+		 {
+  background-color: black;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+		}
+
+
+	</style>
+</head>
+<body
+
+<div class="container">
+	<body>
+		<h2>Simple Interest Calculator</h2>
+		Principle	
+		<br>
+		<input type="text" id="Principle" name="Principle">
+			<br> 
+		Rate	
+		<br>
+		<input type="text" id="Rate" name="Rate">
+			<br>
+		Time
+		<br>
+		<input type="text" id="Time" name="Time">
+			<br>
+			<br>
+
+		<input type="button" onclick="calculate_interest()" class="button" value="Calculate Interest">
+		</button>
+			<br>
+
+		<p id="result" </p>
+</div>
+	<script>
+            function calculate_interest()
+            {
+                Principle = document.getElementById("Principle").value;
+                Rate = document.getElementById("Rate").value;
+                Time = document.getElementById("Time").value;
+                result = document.getElementById("result");
+                result.innerHTML = "The Interest is " + (Principle*Rate*Time/100);
+            }
+        </script>
+
+	</body>
+</html>
+
